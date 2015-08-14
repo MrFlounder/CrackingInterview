@@ -1,5 +1,6 @@
 /**
  * Created by guangshuozang on 8/13/15.
+ * O(n^2) time and O(1) space
  */
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -24,7 +25,7 @@ public class ExcOneS1 {
     }
 
     public static void main(String arg[]){
-        System.out.println("Enter something here : ");
+        System.out.println("Enter a string here : ");
 
         try{
             while(true) {
