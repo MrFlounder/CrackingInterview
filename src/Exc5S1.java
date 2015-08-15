@@ -1,5 +1,7 @@
 /**
+ *
  * Created by guangshuozang on 8/15/15.
+ * Time O(n), Space O(n), Best solution
  */
 import java.util.Scanner;
 public class Exc5S1 {
@@ -18,6 +20,8 @@ public class Exc5S1 {
         }
         returnStr.append(str.charAt(i));
         returnStr.append(count);
+        if(returnStr.toString().length() > str.length())
+            return str;
         return returnStr.toString();
     }
     public static void main(String arg[]){
