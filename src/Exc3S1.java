@@ -14,7 +14,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Arrays;
 
-public class ExcThreeS1 {
+public class Exc3S1 {
     public boolean isPermutation(String str1, String str2){
         if(str1.length() != str2.length())
             return false;
@@ -45,7 +45,7 @@ public class ExcThreeS1 {
                 String str1 = bufferRead.readLine();
                 System.out.println("Enter string2 here : ");
                 String str2 = bufferRead.readLine();
-                ExcThreeS1 instance = new ExcThreeS1();
+                Exc3S1 instance = new Exc3S1();
                 System.out.println(instance.isPermutation(str1, str2));
             }
         }catch(IOException e){
