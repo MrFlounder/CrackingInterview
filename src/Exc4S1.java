@@ -3,7 +3,7 @@ import java.util.Scanner;
 /**
  * Created by guangshuozang on 8/15/15.
  * StringBuilder and StringBuffer difference:
- *
+ * StringBuilder is not synchronized, StringBuffer is.
  *
  */
 public class Exc4S1 {

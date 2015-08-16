@@ -4,8 +4,8 @@
  * Created by guangshuozang on 8/15/15.
  * This is only for characters later then a
  * == and .equals() difference:
- *
- *
+ * == compares if two operands refer the same object
+ * .equals() compares the attributes
  * Arrays.toString() is not a wise choice for performance
  * I think I will try to convert the int[] to a long number to compare.
  */
