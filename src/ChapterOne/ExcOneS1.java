@@ -1,4 +1,4 @@
-/**
+package ChapterOne; /**
  * Created by guangshuozang on 8/13/15.
  * O(n^2) time and O(1) space
  */

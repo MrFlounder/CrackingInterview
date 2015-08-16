@@ -1,3 +1,5 @@
+package ChapterOne;
+
 import java.util.Scanner;
 
 /**
