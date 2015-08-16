@@ -6,6 +6,8 @@ import java.util.Scanner;
 
 /**
  * Created by guangshuozang on 8/16/15.
+ * With no buffer
+ * Time O(n^2)
  */
 public class Exc1S4 {
     public LinkedListNode removeDups(LinkedListNode head){
