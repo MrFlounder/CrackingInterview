@@ -10,7 +10,7 @@ public class LinkedListNode extends Object {
         this.setKey(key);
     }
 
-    void appendToTail(Object key){
+    public void appendToTail(Object key){
         LinkedListNode end = new LinkedListNode(key);
         LinkedListNode iter = this;
         while(iter.getNext() != null)
