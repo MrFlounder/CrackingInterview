@@ -9,6 +9,9 @@ public class LinkedListNode extends Object {
     public LinkedListNode(Object key){
         this.setKey(key);
     }
+    public LinkedListNode(){
+        
+    }
 
     public void appendToTail(Object key){
         LinkedListNode end = new LinkedListNode(key);
