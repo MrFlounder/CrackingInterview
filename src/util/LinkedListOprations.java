@@ -10,6 +10,23 @@ public class LinkedListOprations {
     public String[] strSet2 = {"1","1","2","9","3","3","4","4","5","5","6","6","7","7","8","8"};
     //public String[] strSet2 = {"1","8"};
 
+    public LinkedListNode generateLinkedListWithCircle(){
+        LinkedListNode head = new LinkedListNode('A');
+        LinkedListNode headToReturn;
+        head.setNext(new LinkedListNode('B'));
+        headToReturn = head;
+        head = head.getNext();
+        head.setNext(new LinkedListNode('C'));
+        LinkedListNode joinPoint = head;
+        head = head.getNext();
+        head.setNext(new LinkedListNode('D'));
+        head = head.getNext();
+        head.setNext(new LinkedListNode('E'));
+        head = head.getNext();
+        head.setNext(joinPoint);
+        return headToReturn;
+    }
+
     public LinkedListNode initializedWithInt(int length){
         Random generator = new Random();
         LinkedListNode focusNode;
