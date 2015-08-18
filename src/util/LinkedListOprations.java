@@ -39,6 +39,35 @@ public class LinkedListOprations {
         return head;
     }
 
+    public LinkedListNode generatePalindromeWithInt(int length){
+        Random generator = new Random();
+        LinkedListNode focusNode;
+        int[] intSet = new int[length];
+        if(length%2 == 1) {
+            for (int i = 0; i < length/2; i++){
+                intSet[i] = generator.nextInt()%10;
+            }
+            for (int i=length/2 + 1; i<length; i++){
+                intSet[i] = intSet[length-1-i];
+            }
+            intSet[length/2] = generator.nextInt()%10;
+        }else{
+            for (int i = 0; i < length/2; i++){
+                intSet[i] = generator.nextInt()%10;
+            }
+            for (int i=length/2; i<length; i++){
+                intSet[i] = intSet[length-1-i];
+            }
+        }
+        LinkedListNode head = new LinkedListNode(intSet[0]);
+        focusNode = head;
+        for(int i = 1; i < length; i++){
+            focusNode.setNext(new LinkedListNode(intSet[i]));
+            focusNode = focusNode.getNext();
+        }
+        return head;
+    }
+
     public LinkedListNode initializeLinkedList(){
         LinkedListNode focusNode;
         LinkedListNode head = new LinkedListNode(strSet1[0]);
