@@ -1,5 +1,7 @@
 package util;
 
+import java.util.Random;
+
 /**
  * Created by guangshuozang on 8/16/15.
  */
@@ -7,6 +9,18 @@ public class LinkedListOprations {
     public String[] strSet1 = {"a","a","b","b","c","c","d","d","e","e","f","f","g","g","h","h"};
     public String[] strSet2 = {"1","1","2","9","3","3","4","4","5","5","6","6","7","7","8","8"};
     //public String[] strSet2 = {"1","8"};
+
+    public LinkedListNode initializedWithInt(int length){
+        Random generator = new Random();
+        LinkedListNode focusNode;
+        LinkedListNode head = new LinkedListNode(generator.nextInt()%10);
+        focusNode = head;
+        for(int i = 1; i < length; i++){
+            focusNode.setNext(new LinkedListNode(generator.nextInt()%10));
+            focusNode = focusNode.getNext();
+        }
+        return head;
+    }
 
     public LinkedListNode initializeLinkedList(){
         LinkedListNode focusNode;
