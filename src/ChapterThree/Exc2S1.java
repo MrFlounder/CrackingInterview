@@ -7,6 +7,7 @@ import java.util.Stack;
 
 /**
  * Created by guangshuozang on 8/20/15.
+ * Time O(1)
  */
 public class Exc2S1<E> extends Stack<E> {
     Stack<E> trackMin;
