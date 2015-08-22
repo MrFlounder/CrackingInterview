@@ -21,10 +21,12 @@ public class Exc3S1 {
         //if current stack is empty look at last stack
           //if still empty throw exception
         //regular pop
+        return 0;
     }
     public int popAt(int stackPointer){
         //if stack is not empty
         //pop
         //else exception
+        return 0;
     }
 }
