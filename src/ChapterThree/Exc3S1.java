@@ -23,10 +23,4 @@ public class Exc3S1 {
         //regular pop
         return 0;
     }
-    public int popAt(int stackPointer){
-        //if stack is not empty
-        //pop
-        //else exception
-        return 0;
-    }
 }
