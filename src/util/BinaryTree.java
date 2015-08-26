@@ -4,26 +4,6 @@ public class BinaryTree{
 
     Node root;
 
-    public static void main(String[] args){
-        BinaryTree bt = new BinaryTree();
-        bt.addNode(1, "a");
-        bt.addNode(2, "b");
-        bt.addNode(3, "c");
-        bt.addNode(4, "d");
-        bt.addNode(5, "e");
-        bt.addNode(6, "f");
-        bt.addNode(8, "h");
-        bt.addNode(7, "g");
-
-        bt.inOrderTraverseTree(bt.root);
-
-        //System.out.println(bt.findNode(12));
-
-        System.out.println(bt.remove(3));
-        bt.inOrderTraverseTree(bt.root);
-
-    }
-
     public void addNode(int key, String name){
         //if tree is empty
         Node newNode = new Node(key, name);
