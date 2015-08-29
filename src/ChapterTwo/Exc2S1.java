@@ -1,7 +1,7 @@
 package ChapterTwo;
 
-import util.LinkedListNode;
-import util.LinkedListOprations;
+import linear.util.LinkedListNode;
+import linear.util.LinkedListOprations;
 
 import java.util.Scanner;
 

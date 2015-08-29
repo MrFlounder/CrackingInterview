@@ -1,4 +1,4 @@
-package util;
+package linear.util;
 import java.util.Stack;
 
 /**

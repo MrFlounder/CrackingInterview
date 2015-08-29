@@ -1,6 +1,6 @@
 package ChapterThree;
 
-import util.PrintStack;
+import linear.util.PrintStack;
 
 import java.util.Stack;
 
@@ -33,7 +33,7 @@ public class Exc4S1 {
         stack1.push(6);
         stack1.push(7);
         Exc4S1 instance = new Exc4S1();
-        instance.moveDisks(7,stack1,stack2,stack3);
+        instance.moveDisks(7, stack1, stack2, stack3);
         PrintStack opr = new PrintStack();
         opr.printStack(stack2);
     }

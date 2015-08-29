@@ -1,6 +1,6 @@
 package ChapterTwo;
 
-import util.LinkedListNode;
+import linear.util.LinkedListNode;
 
 import java.util.Hashtable;
 import java.util.Scanner;

@@ -1,4 +1,4 @@
-package util;
+package linear.util;
 
 public class BinaryTree{
 

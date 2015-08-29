@@ -1,7 +1,7 @@
 package ChapterTwo;
 
-import util.LinkedListNode;
-import util.LinkedListOprations;
+import linear.util.LinkedListNode;
+import linear.util.LinkedListOprations;
 
 /**
  * Created by guangshuozang on 8/17/15.

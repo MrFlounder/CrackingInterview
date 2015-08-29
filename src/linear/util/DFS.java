@@ -1,4 +1,4 @@
-package util;
+package linear.util;
 
 /**
  * Created by guangshuozang on 8/26/15.
