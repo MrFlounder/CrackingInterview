@@ -4,7 +4,7 @@ package tree.util;
  * Created by guangshuozang on 8/29/15.
  */
 public class BST {
-    Node root;
+    public Node root;
     public void BST(Node root){
         this.root = root;
     }
