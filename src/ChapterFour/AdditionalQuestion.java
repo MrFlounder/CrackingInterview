@@ -34,7 +34,7 @@ public class AdditionalQuestion {
 
        	        // Find the node with key 75
 
-       	        System.out.println("\nNode with the key 75");
+       	        System.out.println("\nTreeNode with the key 75");
 
        	        System.out.println(theTree.search(75));
 

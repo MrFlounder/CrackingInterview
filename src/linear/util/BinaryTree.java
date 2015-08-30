@@ -100,7 +100,7 @@ public class BinaryTree{
     }
 
     // public boolean remove(int key){
-    // 	Node noteToRemoveParent = findNodeParent(key);
+    // 	TreeNode noteToRemoveParent = findNodeParent(key);
     // 	if(noteToRemoveParent==null)
     // 		return false;
     // 	if(noteToRemoveParent.leftChild !=null){
@@ -116,9 +116,9 @@ public class BinaryTree{
     // 	return true;
     // }
 
-    // public Node findNodeParent(int key){
-    // 	Node focusNode = root;
-    // 	Node parent = focusNode;
+    // public TreeNode findNodeParent(int key){
+    // 	TreeNode focusNode = root;
+    // 	TreeNode parent = focusNode;
     // 	while(true){
     // 		if(focusNode == null)
     // 		return null;

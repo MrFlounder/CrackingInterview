@@ -11,8 +11,8 @@ public class BFS {
         visit(root);
         queue.enqueue(root);
         while(!queue.isEmpty()){
-            Node r = queue.dequeue();
-            foreach(Node n in r.adjacent){
+            TreeNode r = queue.dequeue();
+            foreach(TreeNode n in r.adjacent){
                 if(n.visited == false){
                     visit(n);
                     n.visited = true;

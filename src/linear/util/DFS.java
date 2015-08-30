@@ -6,18 +6,18 @@ package linear.util;
  */
 public class DFS {
     /*
-    void search(Node root){
+    void search(TreeNode root){
         if(root == null) return;
         visit(root);
         root.visited = true;
-        foreach(Node n in root.adjacent){
+        foreach(TreeNode n in root.adjacent){
             if(n.visited == false){
                 search(n);
             }
         }
     }
 
-    void searchWithStack(Node root){
+    void searchWithStack(TreeNode root){
         if(root == null) return;
         visit(root);
         root.visited = true;

@@ -4,17 +4,17 @@ package tree.util;
  * Created by guangshuozang on 8/29/15.
  */
 public class BST {
-    public Node root;
-    public void BST(Node root){
+    public TreeNode root;
+    public void BST(TreeNode root){
         this.root = root;
     }
     public void insert(int val){
-        Node newNode = new Node(val);
+        TreeNode newNode = new TreeNode(val);
         if(root==null) {
             root = newNode;
             return;
         }else {
-            Node focusNode = root;
+            TreeNode focusNode = root;
             if(val<=focusNode.val)
                 insert(newNode,focusNode.left,focusNode,true);
             else
@@ -23,7 +23,7 @@ public class BST {
 
 
     }
-    public void insert(Node newNode, Node entry, Node parent, boolean isLeft){
+    public void insert(TreeNode newNode, TreeNode entry, TreeNode parent, boolean isLeft){
         if(entry==null)
             if(isLeft)
                 parent.left = newNode;
@@ -35,8 +35,8 @@ public class BST {
             insert(newNode,entry.right,entry,false);
 
     }
-    public Node search(int val){
-        Node focusNode = root;
+    public TreeNode search(int val){
+        TreeNode focusNode = root;
         if(focusNode==null)
             return null;
         else if(val<focusNode.val)
@@ -46,7 +46,7 @@ public class BST {
         else
             return focusNode;
     }
-    public Node search(int val, Node entry){
+    public TreeNode search(int val, TreeNode entry){
         if(entry==null)
             return null;
         else if(val<entry.val)
@@ -56,21 +56,21 @@ public class BST {
         else
             return entry;
     }
-    public void inOrderTraverse(Node entry){
+    public void inOrderTraverse(TreeNode entry){
         if(entry!=null) {
             inOrderTraverse(entry.left);
             System.out.println(entry.val);
             inOrderTraverse(entry.right);
         }
     }
-    public void preOrderTraverse(Node entry){
+    public void preOrderTraverse(TreeNode entry){
         if(entry!=null) {
             System.out.println(entry.val);
             inOrderTraverse(entry.left);
             inOrderTraverse(entry.right);
         }
     }
-    public void postOrderTraverse(Node entry){
+    public void postOrderTraverse(TreeNode entry){
         if(entry!=null) {
             inOrderTraverse(entry.left);
             inOrderTraverse(entry.right);
@@ -78,8 +78,8 @@ public class BST {
         }
     }
     public boolean delete(int val){
-        Node focusNode = root;
-        Node parent = root;
+        TreeNode focusNode = root;
+        TreeNode parent = root;
         boolean isLeftChild = true;
         if(focusNode == null)
             return false;
@@ -117,7 +117,7 @@ public class BST {
             else
                 parent.right = focusNode.left;
         }else{
-            Node replacement = findReplacementNode(focusNode);
+            TreeNode replacement = findReplacementNode(focusNode);
             if(focusNode == root)
                 root = replacement;
             else if(isLeftChild)
@@ -129,10 +129,10 @@ public class BST {
         return true;
 
     }
-    public Node findReplacementNode(Node replacedNode){
-        Node replacement = replacedNode;
-        Node parent = replacedNode;
-        Node focusNode = replacedNode.right;
+    public TreeNode findReplacementNode(TreeNode replacedNode){
+        TreeNode replacement = replacedNode;
+        TreeNode parent = replacedNode;
+        TreeNode focusNode = replacedNode.right;
         while(focusNode != null){
             parent = replacement;
             replacement = focusNode;
@@ -145,17 +145,5 @@ public class BST {
         return replacement;
     }
 
-    class Node{
-        int val;
-        Node left;
-        Node right;
-        public Node(int val){
-            this.val = val;
-        }
-        public Node(){
-        }
-        @Override public String toString(){
-            return Integer.toString(this.val);
-        }
-    }
+
 }
