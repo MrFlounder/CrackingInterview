@@ -1,10 +1,13 @@
-package linear.util;
+package tree.util;
+
+
 
 /**
  * Created by guangshuozang on 8/26/15.
+ * This is pseudocode, not used anywhere
  */
 public class BFS {
-    void search(Node root){
+   // void search(GraphNode root){
         /*
         Queue queue = new Queue();
         root.visited = true;
@@ -20,6 +23,6 @@ public class BFS {
                 }
             }
         }*/
-    }
+   // }
 
 }
